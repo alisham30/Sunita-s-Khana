@@ -8,10 +8,10 @@ function Navbar() {
         <img src="/images/logof.png" alt="Sunita's Khana" />
       </div>
       <ul className="nav-links">
-        <li><a>Home</a></li>
-        <li><a>Menu</a></li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
+        <li><p>Home</p></li>
+        <li><p>Menu</p></li>
+        <li><p>About</p></li>
+        <li><p>Contact</p></li>
       </ul>
     </nav>
   );
