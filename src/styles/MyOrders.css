@@ -1,0 +1,251 @@
+.my-orders-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.orders-container {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 0 20px;
+  flex: 1;
+}
+
+.orders-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.no-orders p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.browse-menu-btn {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.browse-menu-btn:hover {
+  background-color: #ff5252;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.order-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.order-id {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.order-id span {
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background-color: #ffeaa7;
+  color: #d68910;
+}
+
+.status-badge.processing {
+  background-color: #81ecec;
+  color: #0097e6;
+}
+
+.status-badge.shipped {
+  background-color: #a29bfe;
+  color: #5f27cd;
+}
+
+.status-badge.delivered {
+  background-color: #badc58;
+  color: #6ab04c;
+}
+
+.status-badge.cancelled {
+  background-color: #ff7675;
+  color: #d63031;
+}
+
+.order-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.order-date span {
+  font-weight: 600;
+}
+
+.order-items {
+  margin-bottom: 20px;
+}
+
+.order-items h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.order-items ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-items li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-items li:last-child {
+  border-bottom: none;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.item-quantity {
+  margin: 0 15px;
+  color: #666;
+}
+
+.item-price {
+  font-weight: 600;
+  color: #333;
+}
+
+.order-summary {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summary-row.total {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.order-address, .order-payment {
+  margin-bottom: 15px;
+}
+
+.order-address h3, .order-payment h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.order-address p, .order-payment p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.order-payment p span {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.paid-status {
+  margin-left: 15px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.paid-status.paid {
+  background-color: #badc58;
+  color: #6ab04c;
+}
+
+.paid-status.unpaid {
+  background-color: #ff7675;
+  color: #d63031;
+}
+
+@media (max-width: 768px) {
+  .orders-container {
+    margin-top: 80px;
+  }
+  
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .status-badge {
+    margin-top: 10px;
+  }
+  
+  .item-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .item-quantity, .item-price {
+    margin: 5px 0 0 0;
+  }
+}

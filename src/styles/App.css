@@ -1,0 +1,54 @@
+/* App.css - Main application styling */
+
+/* Add padding to the top of the page to account for fixed navbar */
+body {
+  padding-top: 100px; /* Adjust this value based on your navbar height */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Ensure the carousel has proper spacing */
+.carousel {
+  margin-top: 30px;
+}
+
+/* Card container spacing */
+.card-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5rem;
+  color: #666;
+  width: 100%;
+}
+
+/* Error message */
+.error-message {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff3f3;
+  border: 1px solid #ffcaca;
+  border-radius: 5px;
+  color: #d8000c;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+/* No recipes message */
+.no-recipes {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #666;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
